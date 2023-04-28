@@ -1,3 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #f7ebd3;
+  --container-bg-color: #ca7b42;
+  --text-color-dark: #521908;
+  --text-color-light: #823919;
+  --button-text-color: #ffdbaf;
+}
+
 body {
-  background-color: #f7ebd3;
+  background-color: var(--main-bg-color);
+  padding: 0 2rem;
+  font-family: Inter;
+}
+
+/* POMODORO SCREEN */
+.header {
+  background-color: var(--container-bg-color);
+  height: 100vh;
+  width: 100vw;
+  margin: 0 -2rem;
+  text-align: center;
+}
+
+.header__padding {
+  padding: 0 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-color-light);
+  padding-top: 2.5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.nav__link--active {
+  color: var(--text-color-dark);
+}
+
+.timer {
+  display: inline-block;
+  width: 40%;
+  height: 50%;
+  margin-top: 10%;
+  color: var(--text-color-dark);
+}
+
+.timer__counter {
+  display: flex;
+  padding-left: 10%;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.timer__nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.timer__counter--btn {
+  width: 70px;
+  height: 70px;
+  margin-left: 2%;
+  align-self: center;
+}
+
+.timer__nav--link {
+  font-size: 1.45rem;
+  color: var(--text-color-light);
+}
+
+.timer__nav--link--active {
+  color: var(--text-color-dark);
+}
+
+.timer__counter--label {
+  font-size: 6rem;
+}
+
+.timer__btn {
+  background-color: var(--text-color-light);
+  color: var(--button-text-color);
+  width: 280px;
+  height: 75px;
+  border: 0;
+  border-radius: 25px;
+  font-size: 2rem;
+  margin-top: 1.2rem;
+}
+
+.timer__reset--label {
+  margin-top: 1.2rem;
+  color: var(--text-color-light);
 }

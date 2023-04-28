@@ -5,9 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pomodoro</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="header">
+      <nav class="nav header__padding">
+        <h2 class="nav__link nav__link--active" pomodoro="0">25min : 5min</h2>
+        <h2 class="nav__link" pomodoro="1">50min : 10min</h2>
+      </nav>
+      <div class="timer">
+        <nav class="timer__nav">
+          <h3 class="timer__nav--link timer__nav--link--active">Pomodoro</h3>
+          <h3 class="timer__nav--link">Break</h3>
+        </nav>
+        <div class="timer__counter">
+          <h1 class="timer__counter--label">25:00</h1>
+          <img src="images/icons8-next-96.png" class="timer__counter--btn" />
+        </div>
+        <button class="timer__btn">Start</button>
+        <h3 class="timer__reset--label">Reset Timer</h3>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
