@@ -95,6 +95,7 @@ body {
   border-radius: 25px;
   font-size: 2rem;
   margin-top: 1.2rem;
+  box-shadow: 0 4px rgba(46, 46, 46, 0.2);
 }
 
 .timer__reset--label {
